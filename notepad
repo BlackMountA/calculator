@@ -1,0 +1,4 @@
+git remote add origin https://github.com/BlackMountA/calculator.git
+git branch -M main
+git push -u origin main
+thi id thten
