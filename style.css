@@ -19,7 +19,7 @@ main{
     background-color: white;
 }
 .screen{
-    height: 25%;
+    height: 20%;
     background-color: #ddd;
     display: flex;
     flex-direction: column;
@@ -30,10 +30,11 @@ main{
     direction: rtl;
 }
 .cta{
-    height: 75%;
+    height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
+    
 }
 .digits{
     /* height: 75%; */
@@ -56,7 +57,7 @@ button{
 }
 .last-row{
     display: block;
-    text-align: right;
+    text-align: center;
 }
 .arithemetic-operators{
     /* display: block; */
