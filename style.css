@@ -16,17 +16,23 @@ main{
     background-color: rgb(0, 0, 0, 0.5);
     border-radius: 20px;
 }
-  @media(min-width:400px  ){
+  @media(min-width:400px){
     main{
-        max-width: 250px;  
+        max-width: 250px; 
      } 
  } 
+ @media(min-height:300px) and (min-height:300px) {
+    main{
+        height: 90%;
+ 
+    
+     } 
+ } 
+
  .img-slideshow{
     width: 100vw;
-    
-
     height: 99.4vh;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
  }
 .screen{
@@ -52,7 +58,9 @@ main{
 }
 .arithemetic-operators{
     width: 20%;
+    height: fit-content;
 }
+
 button{
     font-size: 1.3rem;
     font-weight: 700;
@@ -66,13 +74,13 @@ button{
 }
 
 .screen__result{
-    color: blue;
+    color: white;
     font-size: 1.3rem;
 }
 .screen__display{
     border: none;
     background: transparent;
-    color: green;
+    color: white;
     /* font-size: 2rem; */
     /* direction: rtl; */
     font-size: 1.3rem;
