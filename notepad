@@ -1,4 +1,191 @@
-git remote add origin https://github.com/BlackMountA/calculator.git
+git remote add origin https:github.com/BlackMountA/calculator.git
 git branch -M main
 git push -u origin main
 thi id thten
+
+
+
+ function calculations(){
+const trial = Number(screenDisplay.value)
+     const trial1 = screenDisplay.value
+     console.log(trial1)
+     const [firstvalue, , ...secondvalue] = trial1
+    console.log(screenDisplay.value)
+     const firstvalueNum = Number(firstvalue)
+     const secondvalueNum = Number(secondvalue)
+     console.log(firstvalueNum, secondvalueNum)
+     function addNums(firstvalueNum, secondvalueNum){
+         const sum = firstvalueNum + secondvalueNum
+          console.log(sum)
+         screenResult.value = sum
+     }
+    
+ addNums(firstvalueNum, secondvalueNum)
+      screenResult.value = trial 
+ }
+ 
+ resultBtn.addEventListener('click',function(){
+     calculations()
+              add(8, 2, 5, 3, 2, 1, 4);
+              add(...x);
+              console.log(sum)
+            
+       } )
+
+
+
+
+ MAIN CODE
+ function trial(...screenDispla){
+   console.log(screenDispla)
+   const [[first, , second]] = screenDispla
+    console.log(firstValue, secondValue)
+   const firs = Number(first)
+   const secon = Number(second)
+ const lat = [firs, secon]
+
+     function checkNumbers(trial){
+          return typeof trial === 'number'
+      }
+      const onlyNumbers = screenDispla.filter(checkNumbers)
+      console.log(onlyNumbers)
+
+   const add = function (...numbers) {
+     let sum = 0;
+      console.log(...numbers);
+
+     for (let i = 0; i < numbers.length; i++){ 
+         sum = sum + Number(numbers[i]);
+     }
+     screenResult.value = sum
+   }
+  
+   resultBtn.addEventListener('click',function(){
+      add(...onlyNumbers);
+     add(...lat);
+      add(8, 2, 5, 3, 2, 1, 4);
+      add(...x);
+   } )
+ }
+ trial(...screenDispla)
+
+
+OPTION2: TO DESTRUCTURE AND CONVERT STRINGS TO NUMBERS
+ const [firstValue,secondValue] = screenDispla
+ const first = Number(firstValue)
+ const second = Number(secondValue)
+ console.log(typeof firstValue, typeof secondValue, typeof first, typeof second)
+ console.log( firstValue,  secondValue,  first,  second)
+
+
+OPTION3: TO DESTRUCTURE AND CONVERT STRINGS TO NUMBERS
+
+ let input = { latitude: '17.0009', longitude: '82.2108'}
+ let {latitude, longitude, lat = +latitude, long = +longitude} = input
+ console.log(typeof latitude, typeof longitude, typeof lat, typeof long)
+ console.log(latitude, longitude, lat, long)
+
+
+ const [trial1, trial2, trial3] = screenDispla
+ console.log(trial1, trial2, trial3)
+ const trial4 = [Number(trial1), Number(trial2), Number(trial3)]
+
+ function checkNumbers(trial){
+     return typeof trial === 'number'
+ }
+ const onlyNumbers = trial4.filter(checkNumbers)
+ console.log(onlyNumbers)
+
+ const add = function (...numbers) {
+     let sum = 0;
+      console.log(...numbers);
+
+     for (let i = 0; i < numbers.length; i++){ 
+         sum = sum + Number(numbers[i]);
+     }
+     screenResult.value = sum
+   };
+  
+   resultBtn.addEventListener('click',function(){
+     add(...trial);
+      add(8, 2, 5, 3, 2, 1, 4);
+      add(...x);
+
+ } )
+
+
+
+
+
+
+
+
+ OPTION: TO LOOP THROUGH THE BUTTONS DURING SELECTION
+
+ for(const [index, el] of btn.entries() ){
+      const trial = `btn${i}`
+      console.log(trial)
+      console.log(el)
+     el.addEventListener('click', function(){  
+      screenDisplay.textContent = el.textContent
+      value = el.textContent
+
+     screenDisplay.value = screenDisplay.value + Number(el.textContent)
+     console.log(screenDisplay.value, el.textContent)
+     const x = [...screenDisplay.value];
+        console.log(x)
+
+    
+    
+ })
+ }
+
+reset.addEventListener('click',function(){
+    screenDisplay.value = ''
+} )
+
+
+ TO ENABLE KEY PRESS FOR THE INPUTS
+ document.addEventListener('keydown', function(){
+     if(window.event.keyCode === 'escape'){
+        
+         var result = checkLetter(screenDisplay.value)
+     }
+     screenDisplay.value = ''
+ })
+
+ function addNums(...numbers){
+    
+ }
+ addNums(2, 3, 4, 5, 6)
+
+
+ OPTION2: TO ACTIVATE THE ADD FUNCTION ONLY IF THE PLUS BUTTON IS PRESSED
+
+ const [first, , second] = screenDispla
+  console.log(firstValue, secondValue)
+ const firs = Number(first)
+ const secon = Number(second)
+ const lat = [firs, secon]
+ console.log(firs, secon)
+
+ plusButton.addEventListener('click', function(){ 
+ value = "+"
+ screenDisplay.value = screenDisplay.value + value
+ plusButton.style.color = 'blue'
+ resultBtn.addEventListener('click',function(){
+    add(...onlyNumbers);
+   add(...lat);
+    add(8, 2, 5, 3, 2, 1, 4);
+    add(...x);
+ } )
+ })
+ const add = function (...numbers) {
+   let sum = 0;
+    console.log(...numbers);
+
+   for (let i = 0; i < numbers.length; i++){ 
+       sum = sum + Number(numbers[i]);
+   }
+   screenResult.value = sum
+ };
