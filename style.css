@@ -21,7 +21,7 @@ main{
         max-width: 250px; 
      } 
  } 
- @media(min-height:300px) and (min-height:300px) {
+ @media(min-height:300px) and (min-height:400px) {
     main{
         height: 90%;
  
